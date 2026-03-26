@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Boxes</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background-color: #000000;
+        }
+
+        /* Logo */
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 180px;
+        }
+
+        /* Center container */
+        .container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px 20px 40px;
+        }
+
+        /* List */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            max-width: 550px;
+        }
+
+        li {
+            margin: 20px 0;
+        }
+
+        /* Buttons */
+        .box {
+            width: 100%;
+            height: 85px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            color: white;
+            background-color: #0aabfc;
+            border-radius: 12px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .box:hover {
+            background-color: #2066b2;
+            transform: translateY(-2px);
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            .logo {
+                width: 140px;
+                top: 15px;
+                left: 15px;
+            }
+
+            .container {
+                padding: 80px 16px 30px;
+            }
+
+            .box {
+                height: 75px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="iHUB_Blue.svg" alt="Logo" class="logo">
+
+    <div class="container">
+        <ul>
+            <li><a href="https://crm.ihubutah.org/qr/WNDBg8NSVU4v" class="box">iHub</a></li>
+            <li><a href="https://crm.ihubutah.org/qr/PObhwhcnorIc" class="box">iHub Companies</a></li>
+            <li><a href="https://crm.ihubutah.org/qr/_D305w4IpMh5" class="box">iHub Mentors</a></li>
+            <li><a href="https://crm.ihubutah.org/qr/N6AAlB7wXUPb" class="box">Usage Agreement Form</a></li>
+            <li><a href="https://crm.ihubutah.org/qr/ZP67o1OMXt75" class="box">Blueprint Workshop</a></li>
+            <li><a href="https://crm.ihubutah.org/qr/A-MpOCL-mtAT" class="box">The Boulevard</a></li>
+            <li><a href="https://crm.ihubutah.org/qr/gUh2k95NqpHb" class="box">The Build Fund</a></li>
+            <li><a href="https://crm.ihubutah.org/qr/gYSMuVZMFe74" class="box">Discord Invite</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
